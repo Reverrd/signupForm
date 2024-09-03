@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e5e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.signup-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.signup-container p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    
+}
+
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #666;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.signup-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #26334a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
+.signup-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.signup-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 10px 0;
+    color: #000;
+    font-size: 12px;
+    position: relative;
+}
+.or-text{
+    
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    /* width: fit-content; */
+    text-align: center;
+}
+.or-text span{
+    background-color: #fff;
+    font-size: 1rem;
+}
+hr{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    color: #0000002d;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.google-signup {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.google-signup:hover {
+    background-color: #f5f5f5;
+}
+
+#emailRather{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color:#26334a;
+    color: #dfeaf5;
+    margin-bottom: 20px;
+    /* border: 10px solid green; */
+    font-size: 14px;
+    font-weight: 600;
+  
+}
+#emailRather :hover{
+    background-color: #3f567e50;
+}
+/* -------screen------- */
+@media screen and (max-width:768px) {
+    .signup-container{
+        width: 90%;
+    }
+}
